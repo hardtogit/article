@@ -195,7 +195,7 @@ function setTimeoutMiddleware=({dispatch,getState})=>{
 ```
 ### 四、总结
 在react中需搭配react-redux使用,社区中间件有redux-thunk、redux-promise、redux-observable、redux-saga等等。当然还有些集成方案，dva则是集成redux-saga、react-redux、redux而成。具体怎么使用需要根据实际项目做权衡。至此，redux介绍完啦，希望对感兴趣的朋友有所帮助^-^
-##### 参考
+### 参考
 > https://github.com/reduxjs/redux  
 
 > https://redux.js.org/
