@@ -86,7 +86,7 @@ dispatch接收action参数 调用 reducer 函数，接收返回的 newState 赋�
 ```
 
 麻雀虽小、五脏俱全，这个丐版的 redux 能用，但不好用。所以它还有一些扩展。
-###四、扩展
+### 四、扩展
 #### 1、combineReducers
 
 大型应用需要模块化拆分，不同的功能模块使用不同的 Reducer 减少耦合，使项目逻辑清晰、更有利于开发维护。combineReducers 则是提供这样的支持。由下实现可看出 combineReducers 以传入对象的 key 为状态模块的区分标识。注意：每个 action 都会触发所有模块的 reducer,所以 actionType 的去重需要注意。
