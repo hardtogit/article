@@ -115,7 +115,7 @@ const reducer=combineReducers({'user':(state,action)=>{},'shop':(state,action)=>
  */
 ```
 
-####2、applyMiddleware
+#### 2、applyMiddleware
 
 redux提供的可扩展性，用于处理一些通用操作，异步处理、打印日志等等，因为 reducer 是纯函数，无法支持异步，所以中间间被设计在 dispatch(action)阶段。applyMiddleware 传入 redux 中间件（稍后介绍）,返回值作为 createStore 的第三个参数。
 
@@ -196,5 +196,6 @@ function setTimeoutMiddleware=({dispatch,getState})=>{
 ### 四、总结
 在react中需搭配react-redux使用,社区中间件有redux-thunk、redux-promise、redux-observable、redux-saga等等。当然还有些集成方案，dva则是集成redux-saga、react-redux、redux而成。具体怎么使用需要根据实际项目做权衡。至此，redux介绍完啦，希望对感兴趣的朋友有所帮助^-^
 ##### 参考
-> https://github.com/reduxjs/redux
+> https://github.com/reduxjs/redux  
+
 > https://redux.js.org/
